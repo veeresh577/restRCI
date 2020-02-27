@@ -1,0 +1,66 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/root.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "required": [
+    "ReadZone",
+    "ErrID",
+    "Report",
+    "MBMask"
+  ],
+  "properties": {
+    "ReadZone": {
+      "$id": "#/properties/ReadZone",
+      "type": "array",
+      "title": "The Readzone Schema",
+      "items": {
+        "$id": "#/properties/ReadZone/items",
+        "type": "integer",
+        "title": "The Items Schema",
+        "default": 0,
+        "examples": [
+          1
+        ]
+      }
+    },
+    "ErrID": {
+      "$id": "#/properties/ErrID",
+      "type": "integer",
+      "title": "The Errid Schema",
+      "default": 0,
+      "examples": [
+        0
+      ]
+    },
+    "Report": {
+      "$id": "#/properties/Report",
+      "type": "string",
+      "title": "The Report Schema",
+      "default": "",
+      "examples": [
+        "GetProf"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "MBMask": {
+      "$id": "#/properties/MBMask",
+      "type": "array",
+      "title": "The Mbmask Schema",
+      "items": {
+        "$id": "#/properties/MBMask/items",
+        "type": "integer",
+        "title": "The Items Schema",
+        "default": 0,
+        "examples": [
+          1,
+          32,
+          16,
+          ":FFFF",
+          "dddd"
+        ]
+      }
+    }
+  }
+}

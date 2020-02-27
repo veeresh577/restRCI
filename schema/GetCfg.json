@@ -1,0 +1,115 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/root.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "required": [
+    "RdrName",
+    "SpotRZ",
+    "_PostTagEventsUrl",
+    "ErrID",
+    "SpotAnt",
+    "SpotRSSI",
+    "Binary",
+    "Report",
+    "SpotDT",
+    "SpotPhase"
+  ],
+  "properties": {
+    "RdrName": {
+      "$id": "#/properties/RdrName",
+      "type": "string",
+      "title": "The Rdrname Schema",
+      "default": "",
+      "examples": [
+        ""
+      ],
+      "pattern": "^(.*)$"
+    },
+    "SpotRZ": {
+      "$id": "#/properties/SpotRZ",
+      "type": "boolean",
+      "title": "The Spotrz Schema",
+      "default": false,
+      "examples": [
+        false
+      ]
+    },
+    "_PostTagEventsUrl": {
+      "$id": "#/properties/_PostTagEventsUrl",
+      "type": "string",
+      "title": "The _posttageventsurl Schema",
+      "default": "",
+      "examples": [
+        " "
+      ],
+      "pattern": "^(.*)$"
+    },
+    "ErrID": {
+      "$id": "#/properties/ErrID",
+      "type": "integer",
+      "title": "The Errid Schema",
+      "default": 0,
+      "examples": [
+        0
+      ]
+    },
+    "SpotAnt": {
+      "$id": "#/properties/SpotAnt",
+      "type": "boolean",
+      "title": "The Spotant Schema",
+      "default": false,
+      "examples": [
+        false
+      ]
+    },
+    "SpotRSSI": {
+      "$id": "#/properties/SpotRSSI",
+      "type": "boolean",
+      "title": "The Spotrssi Schema",
+      "default": false,
+      "examples": [
+        false
+      ]
+    },
+    "Binary": {
+      "$id": "#/properties/Binary",
+      "type": "string",
+      "title": "The Binary Schema",
+      "default": "",
+      "examples": [
+        "HEX"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "Report": {
+      "$id": "#/properties/Report",
+      "type": "string",
+      "title": "The Report Schema",
+      "default": "",
+      "examples": [
+        "GetCfg"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "SpotDT": {
+      "$id": "#/properties/SpotDT",
+      "type": "boolean",
+      "title": "The Spotdt Schema",
+      "default": false,
+      "examples": [
+        false
+      ]
+    },
+    "SpotPhase": {
+      "$id": "#/properties/SpotPhase",
+      "type": "boolean",
+      "title": "The Spotphase Schema",
+      "default": false,
+      "examples": [
+        false
+      ]
+    }
+  }
+}
