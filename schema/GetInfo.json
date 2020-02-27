@@ -1,0 +1,65 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/root.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "required": [
+    "Version",
+    "ErrID",
+    "RdrSN",
+    "RdrModel",
+    "Report"
+  ],
+  "properties": {
+    "Version": {
+      "$id": "#/properties/Version",
+      "type": "string",
+      "title": "The Version Schema",
+      "default": "",
+      "examples": [
+        "3.6.15.0"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "ErrID": {
+      "$id": "#/properties/ErrID",
+      "type": "integer",
+      "title": "The Errid Schema",
+      "default": 0,
+      "examples": [
+        0
+      ]
+    },
+    "RdrSN": {
+      "$id": "#/properties/RdrSN",
+      "type": "string",
+      "title": "The Rdrsn Schema",
+      "default": "",
+      "examples": [
+        "84:24:8D:FB:6C:1A"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "RdrModel": {
+      "$id": "#/properties/RdrModel",
+      "type": "string",
+      "title": "The Rdrmodel Schema",
+      "default": "",
+      "examples": [
+        "96004"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "Report": {
+      "$id": "#/properties/Report",
+      "type": "string",
+      "title": "The Report Schema",
+      "default": "",
+      "examples": [
+        "GetInfo"
+      ],
+      "pattern": "^(.*)$"
+    }
+  }
+}

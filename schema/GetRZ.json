@@ -1,0 +1,84 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/root.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "required": [
+    "Session",
+    "ReadPwr",
+    "Report",
+    "ErrID",
+    "Q",
+    "SelectFlag",
+    "Target"
+  ],
+  "properties": {
+    "Session": {
+      "$id": "#/properties/Session",
+      "type": "integer",
+      "title": "The Session Schema",
+      "default": 0,
+      "examples": [
+        0
+      ]
+    },
+    "ReadPwr": {
+      "$id": "#/properties/ReadPwr",
+      "type": "integer",
+      "title": "The Readpwr Schema",
+      "default": 0,
+      "examples": [
+        200
+      ]
+    },
+    "Report": {
+      "$id": "#/properties/Report",
+      "type": "string",
+      "title": "The Report Schema",
+      "default": "",
+      "examples": [
+        "GetRZ"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "ErrID": {
+      "$id": "#/properties/ErrID",
+      "type": "integer",
+      "title": "The Errid Schema",
+      "default": 0,
+      "examples": [
+        0
+      ]
+    },
+    "Q": {
+      "$id": "#/properties/Q",
+      "type": "integer",
+      "title": "The Q Schema",
+      "default": 0,
+      "examples": [
+        100
+      ]
+    },
+    "SelectFlag": {
+      "$id": "#/properties/SelectFlag",
+      "type": "string",
+      "title": "The Selectflag Schema",
+      "default": "",
+      "examples": [
+        "~SL"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "Target": {
+      "$id": "#/properties/Target",
+      "type": "string",
+      "title": "The Target Schema",
+      "default": "",
+      "examples": [
+        "A"
+      ],
+      "pattern": "^(.*)$"
+    }
+  }
+}

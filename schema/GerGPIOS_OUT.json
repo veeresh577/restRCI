@@ -1,0 +1,55 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/root.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "required": [
+    "Report",
+    "ErrID",
+    "GPIOs"
+  ],
+  "properties": {
+    "Report": {
+      "$id": "#/properties/Report",
+      "type": "string",
+      "title": "The Report Schema",
+      "default": "",
+      "examples": [
+        "GetGPIOs"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "ErrID": {
+      "$id": "#/properties/ErrID",
+      "type": "integer",
+      "title": "The Errid Schema",
+      "default": 0,
+      "examples": [
+        0
+      ]
+    },
+    "GPIOs": {
+      "$id": "#/properties/GPIOs",
+      "type": "array",
+      "title": "The Gpios Schema",
+      "items": {
+        "$id": "#/properties/GPIOs/items",
+        "type": "array",
+        "title": "The Items Schema",
+        "items": {
+          "$id": "#/properties/GPIOs/items/items",
+          "type": "integer",
+          "title": "The Items Schema",
+          "default": 0,
+          "examples": [
+            1,
+            "IN",
+            true,
+            true
+          ]
+        }
+      }
+    }
+  }
+}
