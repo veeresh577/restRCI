@@ -16,6 +16,6 @@
 # except FileNotFoundError as e:
 #             print(e)
 
-import time
-
-print(time.asctime( time.localtime(time.time()) ))
+l=[[0, 0, 0, 0, 0, 0], [1, 1, 1, 1, 1, 0], [0, 0, 0, 0, 0, 0], [0, 1, 1, 1, 1, 1], [0, 1, 1, 1, 1, 1], [0, 0, 0, 0, 0, 0]]
+for i in l:
+    print(i)

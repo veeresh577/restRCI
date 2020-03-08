@@ -12,5 +12,5 @@ def test_post_getinfo(api, command):
 
     response = requests.post(api.url,data=command)
     json_resp = json.loads(response.text)
-    log.info("command :) {} \n response :) {}\n".format(command,json_resp))
+    log.info("command :) {} \n \t response :) {}\n".format(command,json_resp))
     assert response.status_code == 200 and json_resp["ErrID"] == 0
