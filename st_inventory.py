@@ -9,19 +9,21 @@ log = logging.getLogger()
 
 log.info("************stress test case **********")
 
-ip = "10.17.131.131"
+ip = "10.17.131.113"
 url = "http://"+ip+"/restrci"
 header = [('Content-type', 'application/json')]
-t = time.localtime()
-y = time.localtime()
-time.sleep(60)
 
-exce=0
+t = time.localtime()
+time.sleep(60)
+y = time.localtime()
+
+exce = 0
 
 while not ( t.tm_hour == y.tm_hour - 1 and t.tm_min == y.tm_min):
     try:
-        y=time.localtime()
+        y = time.localtime()
         stop_condition = random.randrange(1,4,1)
+
         if stop_condition == 1:
             stop_value = random.randrange(3,20,1)
         elif stop_condition == 2:
@@ -39,7 +41,7 @@ while not ( t.tm_hour == y.tm_hour - 1 and t.tm_min == y.tm_min):
     except requests.exceptions.ConnectionError as e:
         print(e)
         log.info(e)
-        exce = exce + 1
+
     except Exception as e:
         print(e)
         log.info(e)
