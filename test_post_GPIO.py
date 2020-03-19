@@ -9,14 +9,13 @@ reader =reader.split(character)
 def test_post_Getgpio(api, command):
     
     response = requests.post(api.url,data=command)
-    print(command)
+
     json_resp = json.loads(response.text)
-    print(json_resp)
+    command = json.loads(command)
+
     log.info("command :) {} \n \t response :) {}\n".format(command,json_resp))
-    # error =api.GetERROR(json_resp)
-    assert response.status_code == 200 and json_resp["ErrID"] == 0
 
-
+    assert response.status_code == 200 and json_resp["ErrID"] == 0 and json_resp["Report"] == command["Cmd"]
 
 
 
