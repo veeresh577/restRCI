@@ -11,6 +11,6 @@ Steps:
 
 Install Python 3.x
 Install all the python modules from requirement.txt
-Execute through pytest.
+Execute through pytest command line 
 check for the logs
 html : report.html
