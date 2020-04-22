@@ -4,19 +4,21 @@ author : vs6993
 """
 
 import requests
-import jsonschema
+import time
+import os
+#import jsonschema
 import json
 import logging
 from configparser import ConfigParser
 import pytest
 
 
-character = "-"   #character to be used as spliter to seperate commands
+character = "-"   # character to be used as spliter to seperate commands
 
 config = ConfigParser()
 config.read("setting.ini")
 
-logging.basicConfig(filename=r"C:\Users\vs6993\PycharmProjects\restrci_automation\rest_rci.log",level=logging.INFO,filemode='w')
+logging.basicConfig(filename=os.getcwd()+r"\rest_rci.log",level=logging.INFO,filemode='w')
 log = logging.getLogger()
 
 ErrorTypes = {
@@ -67,28 +69,29 @@ class rest:
         self.protocal = self.con.get('config', 'protocal')
         # self.header = self.con.get('config','')
         self.url = self.protocal + "://" + self.ip + "/" + self.endpoint
+        self.y = time.localtime()
 
-    def validate(self,response , command):
-
-        output = json.loads(response.text)
-        
-        command_field = command.get["Cmd"]
-        try:
-            schema=open("C:\\Users\\vs6993\PycharmProjects\\restrci_automation\\schema\\GetInfo.json",'r')
-            schema= json.dumps(schema.read())
-        except FileNotFoundError as e:
-            print(e)
-        
-            
-        if jsonschema.validate(output,schema):
-            return True
-        else:
-            return False
-
-
-    def GetERROR(json_resp):
-        value=json_resp["ErrID"]
-        return value, ErrorTypes[value]
+    # def validate(self,response , command):
+    #
+    #     output = json.loads(response.text)
+    #
+    #     command_field = command.get["Cmd"]
+    #     try:
+    #         schema=open("C:\\Users\\vs6993\PycharmProjects\\restrci_automation\\schema\\GetInfo.json",'r')
+    #         schema= json.dumps(schema.read())
+    #     except FileNotFoundError as e:
+    #         print(e)
+    #
+    #
+    #     if jsonschema.validate(output,schema):
+    #         return True
+    #     else:
+    #         return False
+    #
+    #
+    # def GetERROR(json_resp):
+    #     value=json_resp["ErrID"]
+    #     return value, ErrorTypes[value]
 
 
 

@@ -1,0 +1,61 @@
+
+Date = :532020
+	 	 	 	total  passed  failed  skipped
+Test Count   = 	46	   45	   1	   0
+Pass Test case Ratio = 97.83 % 
+Fail Test case Ratio = 2.17 % 
+Skip Test case Ratio = 0.0 % 
+
+
+REST RCI API Automation Total time taken = 0:00:18.541790
+-------------------------------------------------------------------------------
+Date = : time.struct_time(tm_year=2020, tm_mon=3, tm_mday=21, tm_hour=13, tm_min=2, tm_sec=52, tm_wday=5, tm_yday=81, tm_isdst=0)
+	 	 	 	total  passed  failed  skipped
+Test Count   = 	46	   45	   1	   0
+Pass Test case Ratio = 97.83 % 
+Fail Test case Ratio = 2.17 % 
+Skip Test case Ratio = 0.0 % 
+
+
+REST RCI API Automation Total time taken = 0:00:18.035399
+-------------------------------------------------------------------------------
+Date = : 21/21/21Time = :13.10
+	 	 	 	total  passed  failed  skipped
+Test Count   = 	46	   45	   1	   0
+Pass Test case Ratio = 97.83 % 
+Fail Test case Ratio = 2.17 % 
+Skip Test case Ratio = 0.0 % 
+
+
+REST RCI API Automation Total time taken = 0:00:10.674934
+-------------------------------------------------------------------------------
+Date = : 21/21/21   Time = :13.15
+	 	 	 	total  passed  failed  skipped
+Test Count   = 	212	   163	   49	   0
+Pass Test case Ratio = 76.89 % 
+Fail Test case Ratio = 23.11 % 
+Skip Test case Ratio = 0.0 % 
+
+
+REST RCI API Automation Total time taken = 0:03:46.113105
+-------------------------------------------------------------------------------
+Date = : 21/3/2020   Time = :13.20
+	 	 	 	total  passed  failed  skipped
+Test Count   = 	212	   162	   50	   0
+Pass Test case Ratio = 76.42 % 
+Fail Test case Ratio = 23.58 % 
+Skip Test case Ratio = 0.0 % 
+
+
+REST RCI API Automation Total time taken = 0:03:45.714302
+-------------------------------------------------------------------------------
+Date = : 22/3/2020   Time = :11.25
+	 	 	 	total  passed  failed  skipped
+Test Count   = 	212	   162	   50	   0
+Pass Test case Ratio = 76.42 % 
+Fail Test case Ratio = 23.58 % 
+Skip Test case Ratio = 0.0 % 
+
+
+REST RCI API Automation Total time taken = 0:03:47.507978
+-------------------------------------------------------------------------------
